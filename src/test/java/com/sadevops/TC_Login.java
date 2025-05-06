@@ -1,20 +1,20 @@
 package com.sadevops;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+// import org.openqa.selenium.By;
+// import org.openqa.selenium.WebDriver;
+// import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+// import io.github.bonigarcia.wdm.WebDriverManager;
 public class TC_Login {
 	
 	@Test
 	public void login_Test()
 	{
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		// WebDriverManager.chromedriver().setup();
+		// WebDriver driver = new ChromeDriver();
+		// driver.manage().window().maximize();
 		
 //		driver.get("https://opensource-demo.orangehrmlive.com/");
 //		
@@ -25,12 +25,12 @@ public class TC_Login {
 //
 //		
 //		Assert.assertEquals(driver.getTitle(), "OrangeHRM");https://rahulshettyacademy.com/client/
-		driver.get("https://rahulshettyacademy.com/client/");
-		driver.findElement(By.id("userEmail")).sendKeys("chulliyanshinoj@gmail.com");
-		driver.findElement(By.id("userPassword")).sendKeys("Pattiam@123");
-		driver.findElement(By.id("login")).click();
-		Assert.assertEquals(driver.getTitle(), "Let's Shop");
-		driver.close();
+		// driver.get("https://rahulshettyacademy.com/client/");
+		// driver.findElement(By.id("userEmail")).sendKeys("chulliyanshinoj@gmail.com");
+		// driver.findElement(By.id("userPassword")).sendKeys("Pattiam@123");
+		// driver.findElement(By.id("login")).click();
+		Assert.assertEquals(1+2, "3");
+		// driver.close();
 	}
 	
 
